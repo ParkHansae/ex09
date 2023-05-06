@@ -28,7 +28,7 @@ const BookPage = () => {
     setLoading(false);
     console.log(result);
 
-    ref_query.current.focus();
+
   };
 
   useEffect(() => {

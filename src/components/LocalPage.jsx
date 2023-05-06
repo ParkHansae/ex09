@@ -14,7 +14,7 @@ const LocalPage = () => {
   const getLocal = async () => {
     const url = "https://dapi.kakao.com/v2/local/search/keyword.json";
     const config = {
-      headers: { Authorization: "KakaoAK 1516d2c502f56b88f702da4d62d772a5" },
+      headers: { Authorization: "KakaoAK b80880fbde422de3fd9b4a4e67c9bb54" },
       params: { query: query, size: 5, page: page },
     };
     setLoading(true);
