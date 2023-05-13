@@ -9,7 +9,7 @@ export const LoginPage = ({history}) => {
   const [loading, setLoading] = useState(false);
   const auth = getAuth(app);
   const [form, setForm] = useState({
-    email:'finky97@naver.com',
+    email:'hsae97@naver.com',
     password:'gksto97!!'
   });
   const {email, password} = form;
@@ -24,6 +24,7 @@ const onLogin = () =>{
     signInWithEmailAndPassword(auth, email, password)
     .then(success=> {
         sessionStorage.setItem('email',email);
+        sessionStorage.setItem('uid', success.user.uid);
         setLoading(false);
         history.push('/');
     })

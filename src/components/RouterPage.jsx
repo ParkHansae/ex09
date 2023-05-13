@@ -39,7 +39,7 @@ const RouterPage = ({history}) => {
               <>
                 <Link to="/mypage">{sessionStorage.getItem('email')}</Link>
                 <Link to="/logout"
-                    onClick={onClickLogout}>로그아웃</Link>
+                    onClick={onClickLogout}>로그아웃</Link> 
               </>
               :
               <Link to="/login">로그인</Link>
